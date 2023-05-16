@@ -7,10 +7,12 @@ class BinarySearchTree:
   
   def insert(self, value: int) -> None:
     new_node: Node = Node(value)
+
     if self.root is None:
       self.root = new_node
     else:
       current: Optional[Node] = self.root
+
       while True:
         if value == current.value:
           return
@@ -19,12 +21,13 @@ class BinarySearchTree:
           if current.left is None:
             current.left = new_node
             return
+          
           current = current.left
-        
         else:
           if current.right is None:
             current.right = new_node
             return
+          
           current = current.right
   
   def search(self, value: int) -> Optional[Node]:

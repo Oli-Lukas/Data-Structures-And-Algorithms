@@ -1,4 +1,4 @@
-import Queue from "./Queue";
+import Queue from './Queue';
 
 const myQueue = new Queue<string>();
 

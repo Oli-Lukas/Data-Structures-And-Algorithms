@@ -17,6 +17,6 @@ class Queue(Generic[T]):
   
   def peek(self) -> T:
     return self.items[0]
-
+  
   def size(self) -> int:
     return len(self.items)

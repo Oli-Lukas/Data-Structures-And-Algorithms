@@ -1,23 +1,29 @@
-export default class Queue<T> {
+export default class Queue<T>
+{
   private items: T[] = [];
 
-  enqueue(item: T): void {
+  enqueue(item: T): void
+  {
     this.items.push(item);
   }
 
-  dequeue(): T | undefined {
+  dequeue(): T | undefined
+  {
     return this.items.shift();
   }
 
-  isEmpty(): boolean {
+  isEmpty(): boolean
+  {
     return this.items.length === 0;
   }
 
-  peek(): T | undefined {
+  peek(): T | undefined
+  {
     return this.items[0];
   }
 
-  size(): number {
+  size(): number
+  {
     return this.items.length;
   }
 }

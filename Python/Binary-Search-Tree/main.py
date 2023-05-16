@@ -1,7 +1,8 @@
 from typing import Optional
-from binarySearchTree import BinarySearchTree
+from binary_search_tree import BinarySearchTree
 
 tree: BinarySearchTree = BinarySearchTree()
+
 tree.insert(10)
 tree.insert(5)
 tree.insert(15)

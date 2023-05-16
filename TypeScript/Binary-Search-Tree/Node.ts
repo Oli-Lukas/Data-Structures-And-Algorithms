@@ -1,9 +1,11 @@
-export default class Node {
+export default class Node
+{
   value: number;
   left : Node | null;
   right: Node | null;
 
-  constructor(value: number) {
+  constructor(value: number)
+  {
     this.value = value;
     this.left  = null;
     this.right = null;
